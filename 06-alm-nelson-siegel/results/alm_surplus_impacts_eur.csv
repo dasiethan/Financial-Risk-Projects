@@ -1,0 +1,7 @@
+,5Y bond only,Duration-matched 5Y + 20Y
+Parallel +100 bp,2796523,4108
+Parallel -100 bp,-3539668,5586
+Short end up (beta1 +100 bp): flattening,20274,-60176
+Short end down (beta1 -100 bp): steepening,-22681,61646
+Hump up (beta2 +100 bp),223819,-13638
+Hump down (beta2 -100 bp),-235065,11999

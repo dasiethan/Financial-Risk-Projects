@@ -1,0 +1,163 @@
+{
+  "portfolio": {
+    "tickers": {
+      "TTE.PA": "TotalEnergies",
+      "BNP.PA": "BNP Paribas",
+      "MC.PA": "LVMH",
+      "AIR.PA": "Airbus",
+      "SAN.PA": "Sanofi"
+    },
+    "weights": "equal, rebalanced daily",
+    "start": "2010-01-05",
+    "end": "2025-12-31",
+    "n_days": 4093,
+    "annualised_return": 0.14712817300935196,
+    "annualised_volatility": 0.21643505920774433,
+    "skewness": -0.28403037926642644,
+    "excess_kurtosis": 7.638773966754549,
+    "jarque_bera_pvalue": 0.0,
+    "worst_day": "2020-03-12",
+    "worst_day_return": -0.12211799311641204
+  },
+  "settings": {
+    "alpha_var": 0.99,
+    "alpha_es": 0.975,
+    "window_days": 500,
+    "garch_refit_every_days": 20,
+    "mc_simulations": 100000
+  },
+  "snapshot_as_of": "2025-12-31",
+  "snapshot_pct": {
+    "Historical": {
+      "VaR 99%": 0.026364318495908822,
+      "ES 97.5%": 0.02983882931035667
+    },
+    "Normal": {
+      "VaR 99%": 0.023400660053396187,
+      "ES 97.5%": 0.023518030677972344
+    },
+    "Student-t": {
+      "VaR 99%": 0.026420809119670388,
+      "ES 97.5%": 0.02799676445423437
+    },
+    "Monte Carlo (multivariate t)": {
+      "VaR 99%": 0.026418017993809127,
+      "ES 97.5%": 0.02737210149592973
+    },
+    "GARCH-t": {
+      "VaR 99%": 0.019564416367738473,
+      "ES 97.5%": 0.020203046138487658
+    },
+    "FHS (GARCH)": {
+      "VaR 99%": 0.018921241533538996,
+      "ES 97.5%": 0.019169775164449013
+    }
+  },
+  "snapshot_eur_on_1m": {
+    "Historical": {
+      "VaR 99%": 26364.0,
+      "ES 97.5%": 29839.0
+    },
+    "Normal": {
+      "VaR 99%": 23401.0,
+      "ES 97.5%": 23518.0
+    },
+    "Student-t": {
+      "VaR 99%": 26421.0,
+      "ES 97.5%": 27997.0
+    },
+    "Monte Carlo (multivariate t)": {
+      "VaR 99%": 26418.0,
+      "ES 97.5%": 27372.0
+    },
+    "GARCH-t": {
+      "VaR 99%": 19564.0,
+      "ES 97.5%": 20203.0
+    },
+    "FHS (GARCH)": {
+      "VaR 99%": 18921.0,
+      "ES 97.5%": 19170.0
+    }
+  },
+  "backtest_period": [
+    "2011-12-14",
+    "2025-12-31"
+  ],
+  "backtest": {
+    "Historical": {
+      "n_days": 3593,
+      "exceptions": 49,
+      "expected": 35.9,
+      "exception_rate": 0.013637628722516002,
+      "kupiec_lr": 4.312357280145875,
+      "kupiec_pvalue": 0.03783649747122072,
+      "christoffersen_ind_pvalue": 3.9358549634228184e-05,
+      "conditional_coverage_pvalue": 2.4736868660258485e-05,
+      "last_250d_exceptions": 5,
+      "last_250d_zone": "yellow",
+      "share_windows_green": 0.68122009569378,
+      "share_windows_yellow": 0.24611244019138756,
+      "share_windows_red": 0.07266746411483253
+    },
+    "Normal": {
+      "n_days": 3593,
+      "exceptions": 70,
+      "expected": 35.9,
+      "exception_rate": 0.019482326746451433,
+      "kupiec_lr": 25.556542743628825,
+      "kupiec_pvalue": 4.2960682044693836e-07,
+      "christoffersen_ind_pvalue": 5.2095503506263676e-05,
+      "conditional_coverage_pvalue": 7.865102228006117e-10,
+      "last_250d_exceptions": 5,
+      "last_250d_zone": "yellow",
+      "share_windows_green": 0.5648923444976076,
+      "share_windows_yellow": 0.27183014354066987,
+      "share_windows_red": 0.1632775119617225
+    },
+    "Student-t": {
+      "n_days": 3593,
+      "exceptions": 46,
+      "expected": 35.9,
+      "exception_rate": 0.0128026718619538,
+      "kupiec_lr": 2.6188640989678333,
+      "kupiec_pvalue": 0.10560000994934483,
+      "christoffersen_ind_pvalue": 1.8077656847533182e-05,
+      "conditional_coverage_pvalue": 2.752732063795833e-05,
+      "last_250d_exceptions": 4,
+      "last_250d_zone": "green",
+      "share_windows_green": 0.743122009569378,
+      "share_windows_yellow": 0.15370813397129188,
+      "share_windows_red": 0.10316985645933015
+    },
+    "GARCH-t": {
+      "n_days": 3593,
+      "exceptions": 57,
+      "expected": 35.9,
+      "exception_rate": 0.01586418035068188,
+      "kupiec_lr": 10.593621507278272,
+      "kupiec_pvalue": 0.0011347847624281677,
+      "christoffersen_ind_pvalue": 0.07533982174680369,
+      "conditional_coverage_pvalue": 0.001030051710785573,
+      "last_250d_exceptions": 5,
+      "last_250d_zone": "yellow",
+      "share_windows_green": 0.5409688995215312,
+      "share_windows_yellow": 0.4309210526315789,
+      "share_windows_red": 0.028110047846889953
+    },
+    "FHS (GARCH)": {
+      "n_days": 3593,
+      "exceptions": 50,
+      "expected": 35.9,
+      "exception_rate": 0.013915947676036738,
+      "kupiec_lr": 4.960767878523825,
+      "kupiec_pvalue": 0.025928691086593854,
+      "christoffersen_ind_pvalue": 0.1943507001771799,
+      "conditional_coverage_pvalue": 0.03606088087495649,
+      "last_250d_exceptions": 4,
+      "last_250d_zone": "green",
+      "share_windows_green": 0.7030502392344498,
+      "share_windows_yellow": 0.2966507177033493,
+      "share_windows_red": 0.0002990430622009569
+    }
+  }
+}

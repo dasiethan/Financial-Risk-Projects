@@ -1,0 +1,79 @@
+{
+  "dataset": {
+    "n_rows": 30000,
+    "n_train": 21000,
+    "n_test": 9000,
+    "default_rate": 0.2212,
+    "n_candidate_variables": 28
+  },
+  "scorecard": {
+    "scaling": {
+      "base_score": 600,
+      "base_odds_good_bad": 50,
+      "pdo": 20
+    },
+    "n_variables_iv_above_threshold": 19,
+    "n_variables_after_correlation_filter": 17,
+    "final_variables": [
+      "PAY_1",
+      "MAX_DELAY_6M",
+      "PAY_3",
+      "PAY_4",
+      "PAY_6",
+      "LIMIT_BAL",
+      "PAY_AMT1",
+      "PAY_AMT2",
+      "PAY_AMT3",
+      "AVG_UTILIZATION_6M",
+      "PAY_AMT6",
+      "PAY_AMT4",
+      "EDUCATION"
+    ],
+    "train": {
+      "auc": 0.7748001272888044,
+      "gini": 0.5496002545776089,
+      "ks": 0.4207106914368661,
+      "brier": 0.1353697963574104,
+      "log_loss": 0.43226558363539136,
+      "mean_predicted_pd": 0.2211904761904762,
+      "observed_default_rate": 0.2211904761904762
+    },
+    "test": {
+      "auc": 0.7638515494070586,
+      "gini": 0.5277030988141171,
+      "ks": 0.39952621724282317,
+      "brier": 0.13903565538192397,
+      "log_loss": 0.4415161566566294,
+      "mean_predicted_pd": 0.2203867498288804,
+      "observed_default_rate": 0.2212222222222222
+    }
+  },
+  "lightgbm": {
+    "n_trees": 333,
+    "train": {
+      "auc": 0.8265481862826239,
+      "gini": 0.6530963725652479,
+      "ks": 0.4916063432473586,
+      "brier": 0.12481556006758367,
+      "log_loss": 0.3986558162319691,
+      "mean_predicted_pd": 0.22134785164493534,
+      "observed_default_rate": 0.2211904761904762
+    },
+    "test": {
+      "auc": 0.7845452918787992,
+      "gini": 0.5690905837575984,
+      "ks": 0.4313274767126918,
+      "brier": 0.13439284254115352,
+      "log_loss": 0.4270415135874075,
+      "mean_predicted_pd": 0.2206204064937121,
+      "observed_default_rate": 0.2212222222222222
+    }
+  },
+  "stability": {
+    "score_psi_train_vs_test_scorecard": 0.0009163006373399232,
+    "score_psi_train_vs_test_lgbm": 0.0008611994668803738,
+    "max_variable_psi_train_vs_test": 0.0014752458903839415,
+    "illustrative_score_psi_train_vs_test_age_under_30": 0.030990448919661698,
+    "illustrative_share_age_under_30_in_test": 0.32022222222222224
+  }
+}

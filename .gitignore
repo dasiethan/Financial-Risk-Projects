@@ -1,0 +1,24 @@
+# Private study notes (not published)
+INTERVIEW_NOTES.md
+
+# Downloaded datasets (see each project's DATA.md)
+data/
+
+# Record-level anomaly list: identifies public buyers, kept local only
+05-audit-benford/results/top_anomalies.csv
+
+# Local tool settings
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

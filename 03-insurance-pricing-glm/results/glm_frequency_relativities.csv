@@ -1,0 +1,52 @@
+,coef,relativity,p_value
+Intercept,-4.5250,0.0108,0.0000
+C(VehPowerGrp)[T.5],0.0232,1.0235,0.3417
+C(VehPowerGrp)[T.6],0.0687,1.0711,0.0041
+C(VehPowerGrp)[T.7],0.0654,1.0676,0.0058
+C(VehPowerGrp)[T.8],0.1097,1.1159,0.0011
+C(VehPowerGrp)[T.9],0.2294,1.2579,0.0000
+"C(VehAgeGrp, Treatment('5-9'))[T.0]",-0.0530,0.9484,0.1466
+"C(VehAgeGrp, Treatment('5-9'))[T.1-4]",-0.0104,0.9896,0.5752
+"C(VehAgeGrp, Treatment('5-9'))[T.10-14]",-0.1146,0.8917,0.0000
+"C(VehAgeGrp, Treatment('5-9'))[T.15+]",-0.3643,0.6947,0.0000
+"C(DrivAgeGrp, Treatment('41-50'))[T.18-20]",0.0583,1.0600,0.2507
+"C(DrivAgeGrp, Treatment('41-50'))[T.21-25]",-0.3386,0.7128,0.0000
+"C(DrivAgeGrp, Treatment('41-50'))[T.26-30]",-0.4879,0.6139,0.0000
+"C(DrivAgeGrp, Treatment('41-50'))[T.31-40]",-0.2965,0.7434,0.0000
+"C(DrivAgeGrp, Treatment('41-50'))[T.51-60]",-0.0615,0.9404,0.0031
+"C(DrivAgeGrp, Treatment('41-50'))[T.61-70]",-0.1250,0.8825,0.0000
+"C(DrivAgeGrp, Treatment('41-50'))[T.71+]",-0.0832,0.9202,0.0085
+C(VehGas)[T.Regular],-0.1679,0.8454,0.0000
+"C(VehBrand, Treatment('B1'))[T.B10]",-0.0362,0.9645,0.4243
+"C(VehBrand, Treatment('B1'))[T.B11]",0.1383,1.1483,0.0037
+"C(VehBrand, Treatment('B1'))[T.B12]",-0.2755,0.7592,0.0000
+"C(VehBrand, Treatment('B1'))[T.B13]",0.0049,1.0049,0.9231
+"C(VehBrand, Treatment('B1'))[T.B14]",-0.2551,0.7749,0.0126
+"C(VehBrand, Treatment('B1'))[T.B2]",-0.0066,0.9934,0.7318
+"C(VehBrand, Treatment('B1'))[T.B3]",0.0278,1.0282,0.3012
+"C(VehBrand, Treatment('B1'))[T.B4]",0.0068,1.0069,0.8528
+"C(VehBrand, Treatment('B1'))[T.B5]",0.0835,1.0871,0.0068
+"C(VehBrand, Treatment('B1'))[T.B6]",0.0156,1.0158,0.6520
+"C(Region, Treatment('R24'))[T.R11]",-0.0074,0.9926,0.8113
+"C(Region, Treatment('R24'))[T.R21]",-0.0604,0.9414,0.6513
+"C(Region, Treatment('R24'))[T.R22]",0.1590,1.1724,0.0136
+"C(Region, Treatment('R24'))[T.R23]",0.0150,1.0151,0.8450
+"C(Region, Treatment('R24'))[T.R25]",-0.0318,0.9687,0.5669
+"C(Region, Treatment('R24'))[T.R26]",0.0524,1.0538,0.3930
+"C(Region, Treatment('R24'))[T.R31]",0.0680,1.0703,0.0890
+"C(Region, Treatment('R24'))[T.R41]",-0.1293,0.8787,0.0174
+"C(Region, Treatment('R24'))[T.R42]",-0.0833,0.9201,0.4964
+"C(Region, Treatment('R24'))[T.R43]",-0.0534,0.9480,0.7746
+"C(Region, Treatment('R24'))[T.R52]",0.0439,1.0449,0.1671
+"C(Region, Treatment('R24'))[T.R53]",0.0088,1.0089,0.7658
+"C(Region, Treatment('R24'))[T.R54]",0.0655,1.0677,0.1197
+"C(Region, Treatment('R24'))[T.R72]",0.0382,1.0389,0.3204
+"C(Region, Treatment('R24'))[T.R73]",-0.1835,0.8323,0.0023
+"C(Region, Treatment('R24'))[T.R74]",0.2933,1.3408,0.0005
+"C(Region, Treatment('R24'))[T.R82]",0.2125,1.2367,0.0000
+"C(Region, Treatment('R24'))[T.R83]",0.0165,1.0166,0.8597
+"C(Region, Treatment('R24'))[T.R91]",0.0227,1.0229,0.5524
+"C(Region, Treatment('R24'))[T.R93]",0.1343,1.1437,0.0000
+"C(Region, Treatment('R24'))[T.R94]",0.1803,1.1976,0.0658
+BonusMalusCap,0.0275,1.0279,0.0000
+LogDensity,0.0763,1.0793,0.0000

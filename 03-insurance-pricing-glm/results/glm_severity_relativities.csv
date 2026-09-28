@@ -1,0 +1,19 @@
+,coef,relativity,p_value
+Intercept,7.5114,1828.8455,0.0000
+C(VehPowerGrp)[T.5],-0.1168,0.8898,0.0722
+C(VehPowerGrp)[T.6],0.0162,1.0164,0.7936
+C(VehPowerGrp)[T.7],-0.0326,0.9679,0.6081
+C(VehPowerGrp)[T.8],-0.1340,0.8746,0.1351
+C(VehPowerGrp)[T.9],0.0802,1.0835,0.2518
+"C(DrivAgeGrp, Treatment('41-50'))[T.18-20]",0.6442,1.9045,0.0000
+"C(DrivAgeGrp, Treatment('41-50'))[T.21-25]",0.1727,1.1885,0.0337
+"C(DrivAgeGrp, Treatment('41-50'))[T.26-30]",0.0870,1.0909,0.2372
+"C(DrivAgeGrp, Treatment('41-50'))[T.31-40]",0.1326,1.1418,0.0163
+"C(DrivAgeGrp, Treatment('41-50'))[T.51-60]",0.0893,1.0934,0.1162
+"C(DrivAgeGrp, Treatment('41-50'))[T.61-70]",0.0963,1.1011,0.1910
+"C(DrivAgeGrp, Treatment('41-50'))[T.71+]",0.2991,1.3486,0.0005
+C(Area)[T.B],-0.0908,0.9132,0.2565
+C(Area)[T.C],-0.1440,0.8658,0.0253
+C(Area)[T.D],-0.0243,0.9760,0.7115
+C(Area)[T.E],-0.0791,0.9239,0.2313
+C(Area)[T.F],-0.4186,0.6580,0.0007

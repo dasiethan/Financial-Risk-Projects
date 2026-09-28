@@ -1,0 +1,7 @@
+,VaR 99%,ES 97.5%
+Historical,0.02636,0.02984
+Normal,0.02340,0.02352
+Student-t,0.02642,0.02800
+Monte Carlo (multivariate t),0.02642,0.02737
+GARCH-t,0.01956,0.02020
+FHS (GARCH),0.01892,0.01917

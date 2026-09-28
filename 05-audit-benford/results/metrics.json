@@ -1,0 +1,234 @@
+{
+  "data": {
+    "notification_year": 2025,
+    "published_by": "2026-09-01",
+    "raw_rows": 253863,
+    "contracts": 252344,
+    "buyers": 14755,
+    "suppliers": 67183,
+    "total_amount_eur": 399747935938.0155
+  },
+  "round_numbers": {
+    "share_multiple_of_1000": 0.3563033002567923,
+    "share_multiple_of_10000": 0.25757299559331703,
+    "top_exact_amounts": {
+      "200,000": 3674,
+      "40,000": 2944,
+      "100,000": 2825,
+      "400,000": 2640,
+      "80,000": 2453,
+      "60,000": 2270,
+      "120,000": 2143,
+      "50,000": 2114,
+      "600,000": 1775,
+      "150,000": 1656
+    }
+  },
+  "benford": {
+    "first_digit_all": {
+      "n": 251418,
+      "chi2": 3999.593609701001,
+      "chi2_pvalue": 0.0,
+      "mad": 0.01170003295681429,
+      "conformity": "acceptable conformity"
+    },
+    "first_digit_excluding_multiples_of_1000": {
+      "n": 161507,
+      "chi2": 2637.3983393438466,
+      "chi2_pvalue": 0.0,
+      "mad": 0.013223923585569005,
+      "conformity": "marginally acceptable"
+    },
+    "first_two_digits_all": {
+      "n": 251418,
+      "chi2": 55498.30831665705,
+      "chi2_pvalue": 0.0,
+      "mad": 0.00291015954944165,
+      "conformity": "nonconformity"
+    },
+    "first_digit_by_procedure": {
+      "Appel d'offres ouvert": {
+        "n": 86757,
+        "chi2": 1218.781928091541,
+        "chi2_pvalue": 8.385781288314147e-258,
+        "mad": 0.009775544166169055,
+        "conformity": "acceptable conformity"
+      },
+      "Appel d'offres restreint": {
+        "n": 3832,
+        "chi2": 26.034450267865584,
+        "chi2_pvalue": 0.0010361372702344274,
+        "mad": 0.006591378532576808,
+        "conformity": "acceptable conformity"
+      },
+      "Marché passé sans publicité ni mise en concurrence préalable": {
+        "n": 14344,
+        "chi2": 446.4268132567139,
+        "chi2_pvalue": 2.1553047647963343e-91,
+        "mad": 0.0175346606819551,
+        "conformity": "nonconformity"
+      },
+      "Procédure adaptée": {
+        "n": 141281,
+        "chi2": 3222.0607784840126,
+        "chi2_pvalue": 0.0,
+        "mad": 0.014591311145567035,
+        "conformity": "marginally acceptable"
+      },
+      "Procédure avec négociation": {
+        "n": 5014,
+        "chi2": 33.482286170059,
+        "chi2_pvalue": 5.0405900874294884e-05,
+        "mad": 0.007534765032600455,
+        "conformity": "acceptable conformity"
+      }
+    },
+    "largest_two_digit_deviations": {
+      "80": 113.9,
+      "40": 111.4,
+      "60": 97.8,
+      "50": 75.4,
+      "20": 58.3,
+      "90": 30.8,
+      "70": 27.2,
+      "23": 27.0
+    }
+  },
+  "threshold_bunching": {
+    "40,000": {
+      "meaning": "no advertising / competition required below; DECP publication required above",
+      "all_amounts": {
+        "observed_5pct_below": 2182,
+        "expected_5pct_below": 2109.8665867077766,
+        "excess_ratio_below": 1.0341886135107623,
+        "excess_below_pvalue": 0.06004257981143571,
+        "observed_5pct_above": 5527,
+        "expected_5pct_above": 2310.0525480875776,
+        "count_1pct_below": 696,
+        "count_1pct_above": 3370,
+        "binomial_pvalue_1pct_below_vs_above": 1.0
+      },
+      "excluding_multiples_of_1000": {
+        "observed_5pct_below": 1911,
+        "expected_5pct_below": 1746.524814276198,
+        "excess_ratio_below": 1.0941728307432979,
+        "excess_below_pvalue": 5.4760112094294077e-05,
+        "observed_5pct_above": 2494,
+        "expected_5pct_above": 1916.2487840477088,
+        "count_1pct_below": 696,
+        "count_1pct_above": 426,
+        "binomial_pvalue_1pct_below_vs_above": 3.531532998672863e-16
+      },
+      "exact_threshold_minus_1000": 149,
+      "exact_threshold": 2944
+    },
+    "90,000": {
+      "meaning": "adapted procedures: formal notice (BOAMP or legal gazette) required above",
+      "all_amounts": {
+        "observed_5pct_below": 3514,
+        "expected_5pct_below": 3507.5908228861927,
+        "excess_ratio_below": 1.0018272305515197,
+        "excess_below_pvalue": 0.4591558467286859,
+        "observed_5pct_above": 3474,
+        "expected_5pct_above": 3263.9140527083646,
+        "count_1pct_below": 859,
+        "count_1pct_above": 1388,
+        "binomial_pvalue_1pct_below_vs_above": 1.0
+      },
+      "excluding_multiples_of_1000": {
+        "observed_5pct_below": 2940,
+        "expected_5pct_below": 2651.0187188317377,
+        "excess_ratio_below": 1.1090076351085185,
+        "excess_below_pvalue": 1.806529851442223e-08,
+        "observed_5pct_above": 2316,
+        "expected_5pct_above": 2463.097350641248,
+        "count_1pct_below": 859,
+        "count_1pct_above": 472,
+        "binomial_pvalue_1pct_below_vs_above": 8.163247662272267e-27
+      },
+      "exact_threshold_minus_1000": 182,
+      "exact_threshold": 916
+    },
+    "143,000": {
+      "meaning": "EU threshold, central government supplies & services (2024-2025)",
+      "all_amounts": {
+        "observed_5pct_below": 3209,
+        "expected_5pct_below": 2878.5734143864584,
+        "excess_ratio_below": 1.1147883128365406,
+        "excess_below_pvalue": 7.696030528694185e-10,
+        "observed_5pct_above": 4253,
+        "expected_5pct_above": 2660.6474107346176,
+        "count_1pct_below": 510,
+        "count_1pct_above": 553,
+        "binomial_pvalue_1pct_below_vs_above": 0.9114322827256857
+      },
+      "excluding_multiples_of_1000": {
+        "observed_5pct_below": 2190,
+        "expected_5pct_below": 2186.032404618669,
+        "excess_ratio_below": 1.0018149755570633,
+        "excess_below_pvalue": 0.4690295579526006,
+        "observed_5pct_above": 2185,
+        "expected_5pct_above": 2037.0717338281934,
+        "count_1pct_below": 454,
+        "count_1pct_above": 380,
+        "binomial_pvalue_1pct_below_vs_above": 0.0057169878564428
+      },
+      "exact_threshold_minus_1000": 56,
+      "exact_threshold": 49
+    },
+    "221,000": {
+      "meaning": "EU threshold, local authorities supplies & services (2024-2025)",
+      "all_amounts": {
+        "observed_5pct_below": 3873,
+        "expected_5pct_below": 2526.5864184365632,
+        "excess_ratio_below": 1.5328982898580565,
+        "excess_below_pvalue": 3.2506288026499003e-136,
+        "observed_5pct_above": 2118,
+        "expected_5pct_above": 2290.951992845043,
+        "count_1pct_below": 1554,
+        "count_1pct_above": 432,
+        "binomial_pvalue_1pct_below_vs_above": 2.3705944600578275e-148
+      },
+      "excluding_multiples_of_1000": {
+        "observed_5pct_below": 1945,
+        "expected_5pct_below": 1774.8852404282998,
+        "excess_ratio_below": 1.0958454978929508,
+        "excess_below_pvalue": 3.620244409744693e-05,
+        "observed_5pct_above": 1541,
+        "expected_5pct_above": 1613.3419554075929,
+        "count_1pct_below": 531,
+        "count_1pct_above": 290,
+        "binomial_pvalue_1pct_below_vs_above": 1.631453333558758e-17
+      },
+      "exact_threshold_minus_1000": 963,
+      "exact_threshold": 119
+    }
+  },
+  "rule_flags": {
+    "amount_below_10_eur": 926,
+    "amount_100m_eur_or_more": 478,
+    "published_before_notification": 10930,
+    "published_over_2_months_late": 72293,
+    "offers_missing_or_invalid": 32357,
+    "single_offer_competitive_procedure": 42477,
+    "no_competition_40k_or_more": 9748,
+    "same_buyer_supplier_amount_date": 26641,
+    "possible_split_purchase": 5990
+  },
+  "rule_flags_any": 151581,
+  "isolation_forest": {
+    "n_ranked_anomalies": 2524,
+    "share_also_flagged_by_a_rule": 0.8878763866877971,
+    "share_flagged_by_a_rule_overall": 0.6006919126272073,
+    "median_amount_anomalies": 1200000.0,
+    "median_amount_all": 115323.07,
+    "share_amount_below_10_or_100m_plus": 0.4528526148969889,
+    "share_offers_missing": 0.3185419968304279,
+    "share_offers_20_plus": 0.2765451664025357,
+    "top_procedures": {
+      "Appel d'offres ouvert": 1290,
+      "Appel d'offres restreint": 389,
+      "Procédure avec négociation": 382
+    }
+  }
+}

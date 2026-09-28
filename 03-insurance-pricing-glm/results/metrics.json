@@ -1,0 +1,83 @@
+{
+  "data": {
+    "n_policies": 678013,
+    "n_severity_records": 26444,
+    "policies_with_declared_claim": 34060,
+    "policies_with_declared_claim_but_no_amount": 9116,
+    "policies_with_exposure_above_1": 1224,
+    "claims_above_cap": 41,
+    "share_of_amount_above_cap": 0.17705156351026555,
+    "large_claim_cap_eur": 100000,
+    "n_train": 542410,
+    "n_test": 135603,
+    "claims_train": 21007,
+    "claims_test": 5398,
+    "observed_frequency_train": 0.07325538219707056,
+    "observed_frequency_test": 0.07539507012571074,
+    "observed_mean_capped_severity_train": 1851.8203256057504,
+    "observed_mean_capped_severity_test": 1926.825948499444,
+    "large_claim_loading": 0.23495227726144013
+  },
+  "glm_selection": {
+    "frequency_kept": [
+      "C(VehPowerGrp)",
+      "C(VehAgeGrp, Treatment('5-9'))",
+      "C(DrivAgeGrp, Treatment('41-50'))",
+      "BonusMalusCap",
+      "C(VehGas)",
+      "LogDensity",
+      "C(VehBrand, Treatment('B1'))",
+      "C(Region, Treatment('R24'))"
+    ],
+    "frequency_dropped": [
+      "C(Area)"
+    ],
+    "severity_kept": [
+      "C(VehPowerGrp)",
+      "C(DrivAgeGrp, Treatment('41-50'))",
+      "C(Area)"
+    ],
+    "severity_dropped": [
+      "C(VehGas)",
+      "C(VehAgeGrp, Treatment('5-9'))",
+      "C(VehBrand, Treatment('B1'))",
+      "LogDensity",
+      "C(Region, Treatment('R24'))",
+      "BonusMalusCap"
+    ]
+  },
+  "benchmark_constant": {
+    "frequency_poisson_deviance": 0.4857550446061933,
+    "severity_gamma_deviance": 1.373887495652798
+  },
+  "models": {
+    "GLM": {
+      "frequency_poisson_deviance": 0.4654449781170274,
+      "frequency_deviance_explained": 0.0418113341584162,
+      "severity_gamma_deviance": 1.3938072135681516,
+      "severity_deviance_explained": -0.014498798466674234,
+      "pure_premium_lorenz_gini": 0.2907915034552637,
+      "balance_factor_from_train": 1.0004245519893242,
+      "predicted_over_observed_capped_cost": 0.9352540791836855,
+      "predicted_loaded_over_observed_total_cost": 1.0122174392762056,
+      "mean_pure_premium_loaded_eur": 167.7896708853773,
+      "top_decile_over_bottom_decile": 5.626699491413937
+    },
+    "LightGBM": {
+      "frequency_poisson_deviance": 0.4542330231436387,
+      "frequency_deviance_explained": 0.06489283397583612,
+      "severity_gamma_deviance": 1.3760513075354024,
+      "severity_deviance_explained": -0.001574955656450161,
+      "pure_premium_lorenz_gini": 0.34658311693529154,
+      "balance_factor_from_train": 1.0458480022943675,
+      "predicted_over_observed_capped_cost": 0.9335368189435815,
+      "predicted_loaded_over_observed_total_cost": 1.0103588633004386,
+      "mean_pure_premium_loaded_eur": 167.4815850540243,
+      "top_decile_over_bottom_decile": 7.817250784886692
+    }
+  },
+  "lightgbm_trees": {
+    "frequency": 616,
+    "severity": 25
+  }
+}

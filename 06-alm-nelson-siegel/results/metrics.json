@@ -1,0 +1,174 @@
+{
+  "data": {
+    "first_day": "2004-09-06",
+    "last_day": "2025-12-31",
+    "n_days": 5451,
+    "n_month_ends": 256,
+    "maturities_years": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0
+    ]
+  },
+  "ecb_svensson_reconstruction": {
+    "median_max_gap_bp": 1.7763568394002505e-13,
+    "days_with_gap_above_0_1bp": 1,
+    "days_checked": 5451,
+    "largest_gap_bp": 5.614967467523191,
+    "largest_gap_date": "2022-06-23"
+  },
+  "nelson_siegel_fit": {
+    "rmse_bp_mean": 3.6289387887411007,
+    "rmse_bp_median": 2.9954294343660006,
+    "rmse_bp_max": 14.011306581433153,
+    "worst_month": "2008-10-31",
+    "share_months_rmse_below_5bp": 0.671875,
+    "mean_abs_error_bp_by_maturity": {
+      "SR_3M": 4.72,
+      "SR_6M": 0.92,
+      "SR_9M": 2.25,
+      "SR_1Y": 3.31,
+      "SR_2Y": 3.01,
+      "SR_3Y": 1.7,
+      "SR_4Y": 2.26,
+      "SR_5Y": 2.66,
+      "SR_6Y": 2.35,
+      "SR_7Y": 1.58,
+      "SR_8Y": 1.2,
+      "SR_9Y": 1.72,
+      "SR_10Y": 2.61,
+      "SR_15Y": 5.13,
+      "SR_20Y": 3.54,
+      "SR_25Y": 1.57,
+      "SR_30Y": 6.32
+    },
+    "tau_median_years": 2.485410649165102,
+    "tau_min_max": [
+      0.20000531721364453,
+      9.999994828143588
+    ],
+    "share_months_tau_at_search_bound": 0.05859375
+  },
+  "factors_fixed_tau": {
+    "correlation_with_proxies": {
+      "level": 0.9577809128962557,
+      "slope": 0.9686054632299652,
+      "curvature": 0.5745524202559071
+    },
+    "std_monthly_change_beta1_free_tau": 0.47561252667688086,
+    "std_monthly_change_beta1_fixed_tau": 0.27167652617518223,
+    "level_min_max": [
+      -0.032556888015025785,
+      5.419806576004191
+    ]
+  },
+  "alm": {
+    "curve_date": "2025-12-31",
+    "ns_betas_pct": [
+      3.8811392002129153,
+      -1.8802120590324662,
+      -2.0628818051501616
+    ],
+    "tau": 2.517917688643152,
+    "portfolios": {
+      "liabilities": {
+        "pv_eur": 73891959.768372,
+        "duration": 8.973717846871631,
+        "convexity": 123.27818613067913
+      },
+      "5Y bond only": {
+        "pv_eur": 73891959.76837201,
+        "duration": 4.719535270543553,
+        "convexity": 23.043361408058715
+      },
+      "Duration-matched 5Y + 20Y": {
+        "pv_eur": 73891959.768372,
+        "duration": 8.973717846871631,
+        "convexity": 124.58985573091282
+      }
+    },
+    "factor_duration_pct_change_per_100bp": {
+      "liabilities": {
+        "beta0": 0.08390803724045659,
+        "beta1": 0.021006961171602626,
+        "beta2": 0.016864960619727913
+      },
+      "5Y bond only": {
+        "beta0": 0.04606192375870935,
+        "beta1": 0.020732588469104675,
+        "beta2": 0.01383596364085838
+      },
+      "Duration-matched 5Y + 20Y": {
+        "beta0": 0.08385244516099327,
+        "beta1": 0.02182134324020881,
+        "beta2": 0.017049528846354637
+      }
+    },
+    "surplus_impact_eur": {
+      "Parallel +100 bp": {
+        "5Y bond only": 2796523.4947825074,
+        "Duration-matched 5Y + 20Y": 4107.807699143887
+      },
+      "Parallel -100 bp": {
+        "5Y bond only": -3539667.905556649,
+        "Duration-matched 5Y + 20Y": 5585.552474275231
+      },
+      "Short end up (beta1 +100 bp): flattening": {
+        "5Y bond only": 20273.93669451773,
+        "Duration-matched 5Y + 20Y": -60176.28704953194
+      },
+      "Short end down (beta1 -100 bp): steepening": {
+        "5Y bond only": -22680.768057763577,
+        "Duration-matched 5Y + 20Y": 61645.63812953234
+      },
+      "Hump up (beta2 +100 bp)": {
+        "5Y bond only": 223818.5229011476,
+        "Duration-matched 5Y + 20Y": -13638.107976421714
+      },
+      "Hump down (beta2 -100 bp)": {
+        "5Y bond only": -235065.41902938485,
+        "Duration-matched 5Y + 20Y": 11999.416149914265
+      }
+    },
+    "surplus_impact_pct_of_liabilities": {
+      "Parallel +100 bp": {
+        "5Y bond only": 0.03784611348174723,
+        "Duration-matched 5Y + 20Y": 5.5592079463321434e-05
+      },
+      "Parallel -100 bp": {
+        "5Y bond only": -0.04790328902701176,
+        "Duration-matched 5Y + 20Y": 7.559080164857147e-05
+      },
+      "Short end up (beta1 +100 bp): flattening": {
+        "5Y bond only": 0.0002743727024979461,
+        "Duration-matched 5Y + 20Y": -0.000814382068606187
+      },
+      "Short end down (beta1 -100 bp): steepening": {
+        "5Y bond only": -0.00030694500631544533,
+        "Duration-matched 5Y + 20Y": 0.000834267196631027
+      },
+      "Hump up (beta2 +100 bp)": {
+        "5Y bond only": 0.0030289969788695296,
+        "Duration-matched 5Y + 20Y": -0.0001845682266267248
+      },
+      "Hump down (beta2 -100 bp)": {
+        "5Y bond only": -0.003181204284826669,
+        "Duration-matched 5Y + 20Y": 0.00016239136419616765
+      }
+    }
+  }
+}
